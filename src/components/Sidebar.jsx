@@ -17,7 +17,7 @@ const Sidebar = ({ children }) => {
   const renderAccountInfo = () => {
     return (
       <div className="grid-item">
-        <div className="typography">Account Info</div>
+        <div className="typography">Nombre del asistente</div>
         <input
           type="text"
           className="text-field"
@@ -25,6 +25,7 @@ const Sidebar = ({ children }) => {
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
+        {me}
         <div className="margin-top">
           <button
             type="button"
