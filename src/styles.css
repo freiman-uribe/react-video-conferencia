@@ -1,0 +1,164 @@
+/* Common Styles */
+.container, .app-bar {
+  width: 600px;
+  margin: 35px 0;
+  padding: 0;
+}
+
+@media (max-width: 600px) {
+  .container, .app-bar {
+    width: 80%;
+  }
+
+  .video {
+    width: 300px;
+  }
+}
+
+/* Wrapper Styles */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* App Bar Styles */
+.app-bar {
+  border-radius: 15px;
+  margin: 30px 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  background-color: inherit;
+  box-shadow: none;
+}
+
+/* Video Player Styles */
+.video {
+  width: 550px;
+}
+
+.paper {
+  padding: 10px 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Grid Container Styles */
+.grid-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    flex-direction: column;
+  }
+}
+
+/* Grid Item Styles */
+.grid-item {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.margin-top {
+  margin-top: 20px;
+}
+
+/* Typography Styles */
+.typography {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.typography.header {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+/* Text Field Styles */
+.text-field {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Button Styles */
+.button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  margin-top: 20px;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.button-primary {
+  background-color: #3f51b5;
+}
+
+.button-primary:hover {
+  background-color: #3fb5b5;
+}
+
+.button-secondary {
+  background-color: #f44336;
+}
+
+.button-secondary:hover {
+  background-color: #d32f2f;
+}
+
+.button-icon {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Notifications Styles */
+.notifications {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; /* Center vertically */
+}
+
+.call-message {
+  font-size: 1.5rem; /* Adjust font size as needed */
+}
+
+.answer-button {
+  background-color: #3fb5b5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.answer-button:hover {
+  background-color: #3fb5b5;
+}
