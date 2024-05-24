@@ -32,7 +32,6 @@ const Sidebar = ({ children }) => {
             onClick={() => navigator.clipboard.writeText(me)}
           >
             <span className="button-icon">📋 Copiar ID</span>
-            
           </button>
         </div>
       </div>
@@ -50,6 +49,7 @@ const Sidebar = ({ children }) => {
           value={idToCall}
           onChange={(e) => setIdToCall(e.target.value)}
         />
+        <div className="margin-top">
         {callAccepted && !callEnded ? (
           <button
             type="button"
@@ -67,6 +67,7 @@ const Sidebar = ({ children }) => {
             <span className="button-icon">📞 Llamar</span>
           </button>
         )}
+        </div>
       </div>
     );
   };
