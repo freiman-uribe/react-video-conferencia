@@ -243,7 +243,7 @@ const App = () => {
   const renderOtherUserVideos = () => {
     return (
       <div className="grid-item">
-        {calls.map(call => (
+        {calls||[].map(call => (
           <div key={call.id} className="paper">
             <div>
               <video playsInline ref={call.userVideo} autoPlay className="video" />
